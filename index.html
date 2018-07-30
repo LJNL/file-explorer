@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>File Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/app.css" />
+</head>
+<body class="l-app">
+    <header class="l-app__titlebar titlebar" data-bind="titlebar">
+        <span class="titlebar__path">~/file-explorer</span>
+        <a class="titlebar__btn" data-bind="maximize">[+]</a>
+        <a class="titlebar__btn is-hidden" data-bind="unmaximize">[-]</a>
+        <a class="titlebar__btn" data-bind="minimize">[_]</a>
+        <a class="titlebar__btn" data-bind="close">[X]</a>
+    </header>
+    <div class="l-app__main l-main">
+        <aside class="l-main__dir-list dir-list">
+            <nav>
+                <ul>
+                        <li class="dir-list__li">..</li>
+                        <li class="dir-list__li">assets</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="l-main__file-list file-list">
+            <nav>
+                <ul>
+                    <li class="file-list__li file-list__head">
+                        <span class="file-list__li__name">Name</span>
+                        <span class="file-list__li__size">Size</span>
+                        <span class="file-list__li__time">Modified</span>
+                    </li>
+                    <li class="file-list__li">
+                        <span class="file-list__li__name">index.html</span>
+                        <span class="file-list__li__size">1.71KB</span>
+                        <span class="file-list__li__time">3/3/2017, 15:44:19</span>
+                    </li>
+                </ul>
+            </nav>
+            
+        </main>    
+    </div>
+    <footer class="l-app__footer footer">
+        <h2 class="footer__header">File Explore</h2>
+        <select class="footer__select">
+            <option value="en-US">English</option>
+            <option value="de-DE">Deutsch</option>
+        </select>
+    </footer>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+</html>
