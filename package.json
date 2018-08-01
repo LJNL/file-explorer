@@ -5,25 +5,26 @@
   "main": "index.html",
   "scripts": {
     "start": "nw .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nw tests/unit-tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "fs-jetpack": "^2.1.0",
+    "mock-fs": "^4.5.0",
     "nw": "^0.32.0"
   },
-  "chromium-args":"--mixed-context",
-  "window":{
-    "show":true,
-    "frame":true,
-    "width":1000,
-    "height":600,
-    "min_width":800,
-    "min_height":400,
-    "position":"center",
-    "resizable":true
+  "chromium-args": "--mixed-context",
+  "window": {
+    "show": true,
+    "frame": true,
+    "width": 1000,
+    "height": 600,
+    "min_width": 800,
+    "min_height": 400,
+    "position": "center",
+    "resizable": true
   }
-  
 }
