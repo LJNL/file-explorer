@@ -19,7 +19,7 @@
   "chromium-args": "--mixed-context",
   "window": {
     "show": true,
-    "frame": true,
+    "frame": false,
     "width": 1000,
     "height": 600,
     "min_width": 800,

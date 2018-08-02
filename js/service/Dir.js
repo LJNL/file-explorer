@@ -8,7 +8,7 @@ class DirService extends EventEmitter{
         this.dir=dir||process.cwd();
     }
     setDir(dir = "" ){
-        let newDir = path.join(this.dir,dir);
+        let newDir = join(this.dir,dir);
         //Early exit
         if ( DirService.getStats(newDir) === false ){
             console.log("break out \n");
@@ -38,6 +38,7 @@ class DirService extends EventEmitter{
     getDirList(){
         const collection=DirService.readDir(this.dir).filter((fInfo)=>fInfo.stats.isDirectory());
         if(!this.isRoot()){
+            //add the .. 
             collection.unshift({fileName:".."});
         }
         return collection;
