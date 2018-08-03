@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "filesize": "^3.6.1",
     "fs-jetpack": "^2.1.0",
     "mock-fs": "^4.5.0",
     "nw": "^0.32.0"
