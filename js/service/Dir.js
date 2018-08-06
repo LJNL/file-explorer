@@ -39,6 +39,10 @@ class DirService extends EventEmitter{
         const path=join(this.dir,filename);
         return path;
     }
+    getDir()
+    {
+        return this.dir;
+    }
     getDirList(){
         const collection=DirService.readDir(this.dir).filter((fInfo)=>fInfo.stats.isDirectory());
         if(!this.isRoot()){
